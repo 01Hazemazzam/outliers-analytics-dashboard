@@ -6,7 +6,6 @@ import {
   ShoppingCart,
   Receipt,
   Users,
-  Megaphone,
   Warehouse,
   PackageX,
   ShieldAlert,
@@ -23,7 +22,6 @@ import { PillBarList } from "@/components/dashboard/charts/pill-bar-list";
 import { Sparkline } from "@/components/dashboard/charts/sparkline";
 import { RadialGauge } from "@/components/dashboard/charts/radial-gauge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Skeleton } from "@/components/ui/skeleton";
 import type { ExecutiveOverviewData } from "@/lib/data/queries/executive";
 import { formatCurrency, formatNumber } from "@/lib/format";
 
