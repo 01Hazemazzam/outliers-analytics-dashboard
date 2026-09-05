@@ -20,8 +20,8 @@ export interface NavItem {
 
 export const NAV_ITEMS: NavItem[] = [
   { key: "overview", label: "Executive Overview", href: "/", icon: LayoutDashboard, enabled: true },
-  { key: "sales", label: "Sales & E-commerce", href: "/sales", icon: ShoppingCart, enabled: false },
-  { key: "customers", label: "Customers", href: "/customers", icon: Users, enabled: false },
+  { key: "sales", label: "Sales & E-commerce", href: "/sales", icon: ShoppingCart, enabled: true },
+  { key: "customers", label: "Customers", href: "/customers", icon: Users, enabled: true },
   { key: "marketing", label: "Marketing", href: "/marketing", icon: Megaphone, enabled: false },
   { key: "inventory", label: "Inventory", href: "/inventory", icon: Package, enabled: false },
   { key: "banking", label: "Banking & Financial", href: "/banking", icon: Landmark, enabled: false },
