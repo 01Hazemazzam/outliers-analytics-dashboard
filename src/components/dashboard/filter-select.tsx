@@ -16,9 +16,9 @@ export function FilterSelect({ label, value, onChange, options, allLabel = "All"
   return (
     <div className="flex flex-col gap-1">
       <label className="text-[11px] font-medium text-muted-foreground">{label}</label>
-      <Select value={value || ALL} onValueChange={(v) => onChange(v === ALL ? "" : v)}>
+      <Select value={value || ALL} onValueChange={(v) => onChange(!v || v === ALL ? "" : v)}>
         <SelectTrigger size="sm" className="w-full min-w-[140px]">
-          <SelectValue placeholder={allLabel} />
+          <SelectValue placeholder={allLabel}>{(v: string) => (!v || v === ALL ? allLabel : v)}</SelectValue>
         </SelectTrigger>
         <SelectContent>
           <SelectItem value={ALL}>{allLabel}</SelectItem>
