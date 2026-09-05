@@ -4,6 +4,8 @@ import { getSalesOrders, type SalesFilters } from "@/lib/data/queries/sales";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+// Safety margin for a cold-start ingestion pass on Vercel's serverless runtime.
+export const maxDuration = 30;
 
 function parseFilters(searchParams: URLSearchParams): SalesFilters {
   const filters: SalesFilters = {};

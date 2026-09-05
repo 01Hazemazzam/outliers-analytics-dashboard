@@ -3,6 +3,8 @@ import { refreshData } from "@/lib/data/ingest";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+// Safety margin for a cold-start ingestion pass on Vercel's serverless runtime.
+export const maxDuration = 30;
 
 // GET: used by the background poll — checks file stamps, only re-ingests what changed.
 export async function GET() {

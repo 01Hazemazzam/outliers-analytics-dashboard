@@ -12,6 +12,11 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/api/overview": ["./*.csv"],
     "/api/refresh": ["./*.csv"],
+    "/api/sales": ["./*.csv"],
+    "/api/sales/orders": ["./*.csv"],
+    "/api/customers": ["./*.csv"],
+    "/api/customers/rows": ["./*.csv"],
+    "/api/customers/[customerId]": ["./*.csv"],
   },
 };
 

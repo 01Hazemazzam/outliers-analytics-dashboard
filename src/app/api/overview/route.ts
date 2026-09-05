@@ -4,6 +4,8 @@ import { getExecutiveOverview } from "@/lib/data/queries/executive";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
+// Safety margin for a cold-start ingestion pass on Vercel's serverless runtime.
+export const maxDuration = 30;
 
 export async function GET() {
   try {
