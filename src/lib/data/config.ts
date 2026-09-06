@@ -102,3 +102,7 @@ export const DATASETS: DatasetConfig[] = [
 export function datasetFilePath(dataset: DatasetConfig): string {
   return path.join(/* turbopackIgnore: true */ DATA_DIR, dataset.filename);
 }
+
+export function isDatasetKey(value: string | null): value is DatasetKey {
+  return value !== null && DATASETS.some((d) => d.key === value);
+}

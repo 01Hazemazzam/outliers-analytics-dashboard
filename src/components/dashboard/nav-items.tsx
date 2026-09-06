@@ -26,5 +26,5 @@ export const NAV_ITEMS: NavItem[] = [
   { key: "inventory", label: "Inventory", href: "/inventory", icon: Package, enabled: true },
   { key: "banking", label: "Banking & Financial", href: "/banking", icon: Landmark, enabled: true },
   { key: "hr", label: "HR / Employees", href: "/hr", icon: Briefcase, enabled: true },
-  { key: "explorer", label: "Data Explorer", href: "/explorer", icon: Database, enabled: false },
+  { key: "explorer", label: "Data Explorer", href: "/explorer", icon: Database, enabled: true },
 ];

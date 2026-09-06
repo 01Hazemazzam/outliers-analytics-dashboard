@@ -25,6 +25,10 @@ const nextConfig: NextConfig = {
     "/api/banking/transactions": ["./*.csv"],
     "/api/hr": ["./*.csv"],
     "/api/hr/employees": ["./*.csv"],
+    "/api/explorer/schema": ["./*.csv"],
+    "/api/explorer/rows": ["./*.csv"],
+    "/api/explorer/distinct": ["./*.csv"],
+    "/api/explorer/export": ["./*.csv"],
     // The native addon (duckdb.node) dlopen's libduckdb.so at runtime, a
     // dependency the file tracer can't see via require()/import analysis —
     // without this, Vercel's Linux function is missing the .so and every
