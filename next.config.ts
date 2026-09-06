@@ -17,6 +17,10 @@ const nextConfig: NextConfig = {
     "/api/customers": ["./*.csv"],
     "/api/customers/rows": ["./*.csv"],
     "/api/customers/[customerId]": ["./*.csv"],
+    "/api/marketing": ["./*.csv"],
+    "/api/marketing/campaigns": ["./*.csv"],
+    "/api/inventory": ["./*.csv"],
+    "/api/inventory/products": ["./*.csv"],
   },
 };
 
