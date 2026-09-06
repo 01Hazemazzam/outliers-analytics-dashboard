@@ -275,25 +275,25 @@ export default function ExplorerPage() {
           <Card size="sm">
             <CardContent>
               <p className="text-xs font-medium text-muted-foreground">Rows</p>
-              <p className="mt-1.5 text-2xl font-semibold tracking-tight">
+              <div className="mt-1.5 text-2xl font-semibold tracking-tight">
                 {loadingSchema || !schema ? <Skeleton className="h-7 w-20" /> : formatNumber(schema.rowCount)}
-              </p>
+              </div>
             </CardContent>
           </Card>
           <Card size="sm">
             <CardContent>
               <p className="text-xs font-medium text-muted-foreground">Columns</p>
-              <p className="mt-1.5 text-2xl font-semibold tracking-tight">
+              <div className="mt-1.5 text-2xl font-semibold tracking-tight">
                 {loadingSchema || !schema ? <Skeleton className="h-7 w-12" /> : schema.columns.length}
-              </p>
+              </div>
             </CardContent>
           </Card>
           <Card size="sm">
             <CardContent>
               <p className="text-xs font-medium text-muted-foreground">Source File</p>
-              <p className="mt-1.5 truncate font-mono text-xs">
+              <div className="mt-1.5 truncate font-mono text-xs">
                 {loadingSchema || !schema ? <Skeleton className="h-5 w-32" /> : schema.filename}
-              </p>
+              </div>
             </CardContent>
           </Card>
           <Card size="sm">
