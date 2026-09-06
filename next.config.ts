@@ -21,6 +21,14 @@ const nextConfig: NextConfig = {
     "/api/marketing/campaigns": ["./*.csv"],
     "/api/inventory": ["./*.csv"],
     "/api/inventory/products": ["./*.csv"],
+    // The native addon (duckdb.node) dlopen's libduckdb.so at runtime, a
+    // dependency the file tracer can't see via require()/import analysis —
+    // without this, Vercel's Linux function is missing the .so and every
+    // route fails with "libduckdb.so: cannot open shared object file".
+    "/api/*": [
+      "./node_modules/@duckdb/node-bindings-linux-x64/**/*",
+      "./node_modules/@duckdb/node-bindings-linux-x64-musl/**/*",
+    ],
   },
 };
 
