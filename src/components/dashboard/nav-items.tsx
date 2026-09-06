@@ -24,7 +24,7 @@ export const NAV_ITEMS: NavItem[] = [
   { key: "customers", label: "Customers", href: "/customers", icon: Users, enabled: true },
   { key: "marketing", label: "Marketing", href: "/marketing", icon: Megaphone, enabled: true },
   { key: "inventory", label: "Inventory", href: "/inventory", icon: Package, enabled: true },
-  { key: "banking", label: "Banking & Financial", href: "/banking", icon: Landmark, enabled: false },
-  { key: "hr", label: "HR / Employees", href: "/hr", icon: Briefcase, enabled: false },
+  { key: "banking", label: "Banking & Financial", href: "/banking", icon: Landmark, enabled: true },
+  { key: "hr", label: "HR / Employees", href: "/hr", icon: Briefcase, enabled: true },
   { key: "explorer", label: "Data Explorer", href: "/explorer", icon: Database, enabled: false },
 ];
