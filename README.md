@@ -3,6 +3,7 @@
 A full-stack BI dashboard over six independent business datasets — Sales & E-commerce, Customers, Marketing, Inventory, Banking & Financial, and HR — built with Next.js, DuckDB, and Recharts. Every metric is computed server-side from the source CSVs; nothing is hardcoded on the frontend.
 
 **Live demo:** https://analytics-dashboard-phi-kohl.vercel.app
+**Case study:** [docs/CASE_STUDY.md](docs/CASE_STUDY.md) — overview, architecture, key decisions, and screenshots
 
 ## Architecture
 
